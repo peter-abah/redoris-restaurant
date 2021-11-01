@@ -1,11 +1,14 @@
 body {
   box-sizing: border-box;
   height: 100vh;
+
   color: var(--text-color);
   background-color: var(--bg-color);
   background-image: url('../assets/background.jpg');
   background-size: cover;
   background-blend-mode: overlay;
+
+  font-family: var(--font-sans);
 }
 
 * {

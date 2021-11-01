@@ -1,7 +1,17 @@
 .nav {
+  padding: 1.5rem;
+  background-color: var(--component-bg);
+
   &__links {
+    font-size: 1.125rem;
     display: flex;
     width: fit-content;
     margin-left: auto;
+  }
+
+  &__link {
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: .75rem;
   }
 }
