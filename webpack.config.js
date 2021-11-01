@@ -3,25 +3,30 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: 'index.js',
+  entry: './src/index.js',
   output: {
-    filename: 'main.js',,
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
-  }
+  },
   module: {
     rules: [
-      test: /\.s[ac]ss$/i,
-      use: [
-        "style-loader",
-        "css-loader",
-        {
-          loader: 'sass-loader',
-          options: {
-            implementation: require('sass');
-          }
-        }
-      ]
-    ]
-  }
-}
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(jpg|webp|svg)$/i,
+        type: 'asset/resource',
+      }
+    ],
+  },
+};
