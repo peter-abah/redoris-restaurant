@@ -22,5 +22,9 @@ a {
 }
 
 button {
+  font-family: inherit;
   display: block;
+  background-color: transparent;
+  color: inherit;
+  border: none;
 }
