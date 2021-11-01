@@ -1,5 +1,2 @@
-body {
-  background-image: url('../assets/background.jpg');
-  background-size: cover;
-  height: 100vh;
-}
+@use 'base';
+@use 'components';
