@@ -3,6 +3,7 @@ import './scss/main.scss';
 import Background from './assets/background.webp';
 import about from './about.hbs';
 import home from './home.hbs';
+import menu from './menu.hbs';
 
 const main = (() => {
   const changePage = event => {
@@ -21,6 +22,7 @@ const main = (() => {
   const pages = {
     about: about(),
     home: home(),
+    menu: menu(),
   };
 
   const btns = [...document.querySelectorAll('.nav__btn')];

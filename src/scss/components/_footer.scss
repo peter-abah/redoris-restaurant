@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: auto;
   padding: 1.5rem;
   background-color: var(--component-bg);
@@ -10,4 +11,5 @@
 .brand {
   font-size: 3rem;
   font-family: var(--font-display);
+  margin-right: 1rem;
 }
