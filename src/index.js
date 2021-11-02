@@ -1,7 +1,7 @@
 import './scss/main.scss';
 
 import Background from './assets/background.webp';
-import about from './about-page.handlebars';
+import about from './about.hbs';
 import home from './home.hbs';
 
 const main = (() => {
