@@ -26,7 +26,11 @@ module.exports = {
       {
         test: /\.(jpg|webp|svg)$/i,
         type: 'asset/resource',
-      }
+      },
+      {
+        test: /\.handlebars$/i,
+        loader: 'handlebars-loader',
+      },
     ],
   },
 };

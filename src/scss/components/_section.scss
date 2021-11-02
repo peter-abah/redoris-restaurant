@@ -1,0 +1,21 @@
+.section {
+  max-width: 31.25rem;
+  text-align: center;
+  margin: 0 auto;
+
+  &__wrapper {
+    background-color: var(--component-bg);
+    margin-top: auto;
+  }
+
+  &__title {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  &__body {
+    padding: 2.5rem 1rem 1rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
+  }
+}
