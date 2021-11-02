@@ -4,8 +4,14 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: auto;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: var(--component-bg);
+}
+
+@media screen and (min-width: 48rem) {
+  .footer {
+    padding: 1.5rem;
+  }
 }
 
 .brand {

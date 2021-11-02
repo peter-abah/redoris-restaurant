@@ -1,5 +1,5 @@
 .nav {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: var(--component-bg);
 
   &__btns {
@@ -13,5 +13,17 @@
     font-size: 1.125rem;
     text-decoration: none;
     padding: .75rem;
+    transition: all 150ms ease-in;
+
+    &--active, &:hover {
+      color: var(--active);
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .nav {
+    padding: 1.5rem;
   }
 }

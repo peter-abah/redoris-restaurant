@@ -11,6 +11,9 @@ const main = (() => {
     const page = pages[key];
 
     content.innerHTML = page;
+
+    [activeBtn, event.target].forEach(btn => btn.classList.toggle('nav__btn--active'));
+    activeBtn = event.target;
   };
 
   const clearElement = (elem) => {
@@ -26,6 +29,7 @@ const main = (() => {
   };
 
   const btns = [...document.querySelectorAll('.nav__btn')];
+  let activeBtn = document.querySelector('.nav__btn--active');
   const content = document.getElementById('content');
   btns.forEach(btn => btn.addEventListener('click', changePage));
 
