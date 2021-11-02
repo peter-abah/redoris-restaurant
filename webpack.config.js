@@ -28,7 +28,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.handlebars$/i,
+        test: /\.(hbs|handlebars)$/i,
         loader: 'handlebars-loader',
       },
     ],
